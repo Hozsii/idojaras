@@ -8,15 +8,14 @@ function refreshWeather(response) {
 }
 
 function searchCity(city) {
-  let apiKey = "cb0ca62646fd02e9ac4c35bb12eec1e0";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  let apiKey = "c6dce9f4d2to3f1a5d7a1057084ac3fb";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(refreshWeather);
 }
 
 function handleSearchSubmit(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-form-input");
-  let cityElement = document.querySelector("#city");
 
   searchCity(searchInput.value);
 }
