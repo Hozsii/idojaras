@@ -2,7 +2,7 @@ Weather app that displays the temperature, humidity and wind in any city around 
 
 Built with
 
-HTML
-CSS
-JS
-Weather API
+* HTML
+* CSS
+* JS
+* Weather API
